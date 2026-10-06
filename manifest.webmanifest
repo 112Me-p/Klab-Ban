@@ -1,0 +1,9 @@
+{
+  "name":"กลับบ้านข้าวมันไก่",
+  "short_name":"กลับบ้าน",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f5ead8",
+  "theme_color":"#173f2c",
+  "lang":"th"
+}

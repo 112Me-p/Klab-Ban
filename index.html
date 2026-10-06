@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5ead8" />
+  <meta name="description" content="กลับบ้านข้าวมันไก่ — สูตรน้ำราดสิงคโปร์ ข้าวมันหอม ไก่นุ่ม น้ำราดมีรสจำ" />
+  <title>กลับบ้านข้าวมันไก่ — สูตรน้ำราดสิงคโปร์</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="กลับบ้านข้าวมันไก่ หน้าแรก">
+      <span class="brand-seal">雞</span>
+      <span class="brand-copy">
+        <strong>กลับบ้านข้าวมันไก่</strong>
+        <small>สูตรน้ำราดสิงคโปร์</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="เมนูหลัก">
+      <button data-scroll="#menu">เมนู</button>
+      <button data-scroll="#sauce">น้ำราด</button>
+      <button data-scroll="#story">เรื่องของร้าน</button>
+      <button data-scroll="#gallery">บรรยากาศ</button>
+    </nav>
+    <button class="cart-button" id="openCartTop">ตะกร้า <span id="cartCountTop">0</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="heroTitle">
+      <picture class="hero-media">
+        <source media="(max-width: 720px)" srcset="assets/hero-mobile.jpg" />
+        <img src="assets/hero-desktop.jpg" alt="หน้าร้านกลับบ้านข้าวมันไก่และชุดข้าวมันไก่" />
+      </picture>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="motif-circles" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="hero-content">
+        <span class="eyebrow">SINGAPORE CHICKEN RICE · PRACHON CHAI</span>
+        <h1 id="heroTitle">กินดี<br><em>เหมือนกลับบ้าน</em></h1>
+        <p>ข้าวมันหอม ไก่นุ่ม น้ำราดมีรสจำ — ร้านเล็ก ๆ ที่ตั้งใจทำมื้อธรรมดาให้น่ากลับมากินซ้ำ</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-scroll="#menu">ดูเมนูและสั่งเลย <b>→</b></button>
+          <button class="btn btn-outline-light" data-scroll="#story">อ่านเรื่องของร้าน</button>
+        </div>
+        <div class="hero-facts" aria-label="ข้อมูลราคา">
+          <span>เริ่มต้น <strong>50.-</strong></span>
+          <span>ข้าวมันเพิ่ม <strong>15.-</strong></span>
+          <span>มีไก่เป็นจาน S / M / L</span>
+        </div>
+      </div>
+      <div class="hero-stamp" aria-hidden="true"><small>HOUSE SPECIAL</small><strong>雞飯</strong><span>กลับบ้าน</span></div>
+    </section>
+
+    <section class="section cream-section quick-section" aria-labelledby="quickTitle">
+      <div class="section-head compact">
+        <div>
+          <span class="eyebrow green">QUICK ORDER</span>
+          <h2 id="quickTitle">หิวแบบไหน<br>เลือกได้เลย</h2>
+        </div>
+        <p>เลือกแบบเร็วสำหรับมื้อที่ไม่อยากคิดเยอะ ระบบจะใส่เมนูลงตะกร้าให้ทันที</p>
+      </div>
+      <div class="quick-grid">
+        <button class="quick-card" data-preset="solo"><span>กินคนเดียว</span><strong>ข้าวมันไก่ต้ม</strong><small>ธรรมดา</small><b>50.-</b></button>
+        <button class="quick-card red" data-preset="hungry"><span>หิวมาก</span><strong>ข้าวมันไก่ต้ม</strong><small>พิเศษ</small><b>60.-</b></button>
+        <button class="quick-card green" data-preset="two"><span>แบ่งกัน 2 คน</span><strong>ไก่สิงคโปร์ M</strong><small>+ ข้าวมัน 2 ถ้วย</small><b>130.-</b></button>
+        <button class="quick-card photo" data-preset="fried"><span>สายกรอบ</span><strong>ข้าวไก่ทอด</strong><small>พิเศษ</small><b>60.-</b></button>
+      </div>
+    </section>
+
+    <section class="section dark-section menu-section" id="menu" aria-labelledby="menuTitle">
+      <div class="motif-diamonds left" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="section-head menu-head">
+        <div>
+          <span class="eyebrow cream">OUR MENU</span>
+          <h2 id="menuTitle">เมนูของบ้าน</h2>
+          <p>เลือกขนาดก่อน แล้วกดเพิ่มลงตะกร้า ราคาที่เลือกจะแสดงให้เห็นชัดเจนทุกครั้ง</p>
+        </div>
+        <div class="menu-filter" role="group" aria-label="กรองเมนู">
+          <button class="is-active" data-filter="all">ทั้งหมด</button>
+          <button data-filter="rice">จานข้าว</button>
+          <button data-filter="chicken">ไก่เป็นจาน</button>
+          <button data-filter="extra">เพิ่ม</button>
+        </div>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <section class="section sauce-section" id="sauce" aria-labelledby="sauceTitle">
+      <div class="sauce-media"><img src="assets/signature-sauce.jpg" alt="น้ำราดสูตรสิงคโปร์กำลังราดลงบนไก่ต้ม" /></div>
+      <div class="sauce-copy vintage-panel">
+        <span class="eyebrow green">THE SIGNATURE</span>
+        <h2 id="sauceTitle">น้ำราดที่ทำให้<br>จานนี้เป็น “กลับบ้าน”</h2>
+        <p>เราไม่ได้อยากให้ข้าวมันไก่เป็นแค่มื้อที่กินแล้วจบ น้ำราดจึงถูกทำให้มีรสจำ หอม เข้ม และพอจะพาไก่ ข้าว และเครื่องเคียงไปด้วยกัน</p>
+        <div class="sauce-notes"><span>หอม</span><span>เค็มหวาน</span><span>มีรสจำ</span></div>
+        <button class="btn btn-primary" data-scroll="#menu">เลือกเมนูที่อยากราด →</button>
+      </div>
+    </section>
+
+    <section class="storyflow" id="story" aria-labelledby="storyTitle">
+      <div class="story-visual" aria-hidden="true">
+        <img id="storyImage" src="assets/story-1.jpg" alt="" />
+        <div class="story-visual-shade"></div>
+        <div class="story-counter"><span id="storyCurrent">01</span><b>/ 06</b></div>
+      </div>
+      <div class="story-steps">
+        <header class="story-intro"><span class="eyebrow green">WHY WE STARTED</span><h2 id="storyTitle">เรื่องของร้าน<br>ไม่ได้เริ่มจากไก่</h2></header>
+
+        <article class="story-step is-active" data-story="assets/story-1.jpg" data-index="01">
+          <img class="story-mobile-image" src="assets/story-1.jpg" alt="หน้าร้านกลับบ้านข้าวมันไก่" />
+          <span>01 · WORK</span><h3>มีงานทำ<br>แต่ไม่พบตัวตน</h3>
+          <p>ทำงานอยู่ในระบบ ตื่น ทำงาน กลับบ้าน แล้วเริ่มใหม่อีกครั้ง จนวันหนึ่งคำถามธรรมดากลายเป็นเรื่องใหญ่ — เรากำลังใช้ชีวิตของใครอยู่กันแน่</p>
+        </article>
+
+        <article class="story-step" data-story="assets/story-2.jpg" data-index="02">
+          <img class="story-mobile-image" src="assets/story-2.jpg" alt="บรรยากาศภายในร้าน" />
+          <span>02 · CHOICE</span><h3>หนทางมีมาก<br>แต่เลือกได้ทีละทาง</h3>
+          <p>คิดได้หลายอย่าง อยากทำได้หลายอย่าง แต่ชีวิตจริงเลือกทุกทางพร้อมกันไม่ได้ สุดท้ายจึงต้องจิ้มสักอย่าง แล้วลงมือให้จริง</p>
+        </article>
+
+        <article class="story-step" data-story="assets/story-3.jpg" data-index="03">
+          <img class="story-mobile-image" src="assets/story-3.jpg" alt="เมนูข้าวมันไก่หลายแบบบนโต๊ะ" />
+          <span>03 · BASIC</span><h3>ก่อนตามหาความหมาย<br>ปากท้องต้องอิ่ม</h3>
+          <p>อาหารคือเรื่องพื้นฐานที่สุดของคน มื้อหนึ่งอาจไม่ได้เปลี่ยนโลก แต่ทำให้คนมีแรงกลับไปใช้ชีวิตต่อได้</p>
+        </article>
+
+        <article class="story-step" data-story="assets/closeup-dish.jpg" data-index="04">
+          <img class="story-mobile-image" src="assets/closeup-dish.jpg" alt="ข้าวมันไก่ระยะใกล้" />
+          <span>04 · THE PICK</span><h3>เลยเลือก<br>ข้าวมันไก่</h3>
+          <p>เรียบง่าย เข้าใจง่าย กินได้ทุกวัย และมีรายละเอียดมากพอให้ทำอย่างจริงจัง เราเลยเริ่มจากสิ่งนี้</p>
+        </article>
+
+        <article class="story-step" data-story="assets/story-4.jpg" data-index="05">
+          <img class="story-mobile-image" src="assets/story-4.jpg" alt="น้ำราดกำลังราดลงบนไก่" />
+          <span>05 · EVERYDAY</span><h3>หนึ่งในปัจจัยสี่<br>แต่ต้องดีพอให้คิดถึง</h3>
+          <p>เราไม่ได้อยากเป็นอาหารพิเศษที่นึกถึงปีละครั้ง แต่อยากเป็นร้านที่วันธรรมดาก็แวะมาได้ — ดีพอให้อยากกลับมากินอาทิตย์ละสองมื้อ</p>
+        </article>
+
+        <article class="story-step" data-story="assets/gallery-atmosphere.jpg" data-index="06">
+          <img class="story-mobile-image" src="assets/gallery-atmosphere.jpg" alt="บรรยากาศร้านช่วงเย็น" />
+          <span>06 · GO FAR</span><h3>เริ่มจากหนึ่งจาน<br>แล้วค่อยเลื่องลือไปไกล</h3>
+          <p>ถ้าคนหนึ่งกินแล้วชอบ เขาจะกลับมา ถ้าชอบมากพอ เขาจะพาคนอื่นมา นั่นคือวิธีที่เราอยากให้ “กลับบ้าน” เติบโต</p>
+          <strong class="story-signoff">กินดี เหมือนกลับบ้าน</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cream-section gallery-section" id="gallery" aria-labelledby="galleryTitle">
+      <div class="section-head">
+        <div><span class="eyebrow green">THE PLACE</span><h2 id="galleryTitle">โต๊ะแดง<br>ไฟอุ่น และมื้อเดิม ๆ</h2></div>
+        <p>ภาพจำของร้านตั้งใจให้เข้าถึงง่ายแบบร้านริมทาง แต่มีภาษาของแบรนด์ชัด — เขียว แดง ครีม ภาชนะขาว และแสงอุ่น</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-card wide"><img src="assets/gallery-atmosphere.jpg" alt="บรรยากาศร้านกลับบ้านข้าวมันไก่" /></figure>
+        <figure class="gallery-card"><img src="assets/gallery-stools.jpg" alt="โต๊ะและเก้าอี้แดงหน้าร้าน" /></figure>
+        <figure class="gallery-card"><img src="assets/gallery-tableware.jpg" alt="จานชามและตะเกียบโทนแบรนด์" /></figure>
+      </div>
+    </section>
+
+    <section class="visit-section">
+      <div class="visit-copy vintage-panel dark-panel">
+        <span class="eyebrow cream">READY FOR A MEAL?</span>
+        <h2>หิวแล้ว<br>ก็กลับบ้าน</h2>
+        <p>เลือกเมนู ใส่ตะกร้า แล้วคัดลอกออเดอร์หรือส่งต่อเข้า LINE ได้จากหน้าเดียว</p>
+        <div class="visit-actions">
+          <button class="btn btn-cream" id="openCartBottom">เปิดตะกร้า <b>→</b></button>
+          <button class="btn btn-outline-light" id="copyMenuLink">คัดลอกลิงก์เมนู</button>
+        </div>
+      </div>
+      <div class="visit-image"><img src="assets/story-2.jpg" alt="บรรยากาศภายในร้าน" /></div>
+    </section>
+  </main>
+
+  <button class="mobile-cart" id="mobileCart" aria-label="เปิดตะกร้า">
+    <span>ตะกร้า <b id="cartCountMobile">0</b></span><strong id="cartTotalMobile">0.-</strong>
+  </button>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head"><div><span>YOUR ORDER</span><h2>ออเดอร์กลับบ้าน</h2></div><button id="closeCart" aria-label="ปิดตะกร้า">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>雞</span><strong>ยังไม่มีรายการ</strong><small>เลือกเมนูและขนาด แล้วกดเพิ่มลงตะกร้าได้เลย</small></div>
+    <div class="cart-note"><label>หมายเหตุถึงร้าน<textarea id="orderNote" placeholder="เช่น ไม่เอาหนัง / ขอข้าวน้อย"></textarea></label></div>
+    <div class="cart-summary"><div><span>จำนวน</span><b id="summaryQty">0 รายการ</b></div><div class="total-row"><span>รวม</span><strong id="summaryTotal">0.-</strong></div></div>
+    <div class="cart-actions"><button id="copyOrder">คัดลอกออเดอร์</button><button class="line-order" id="lineOrder">ส่งไป LINE →</button></div>
+    <small class="cart-hint">Prototype: ปุ่ม LINE จะสร้างข้อความออเดอร์พร้อมส่ง แต่ยังไม่ได้เชื่อมระบบรับออเดอร์ของร้านโดยตรง</small>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

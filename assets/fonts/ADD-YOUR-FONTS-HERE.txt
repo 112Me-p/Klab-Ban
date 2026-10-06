@@ -1,0 +1,6 @@
+Place your original font files here before publishing:
+- DB Urbanist X.woff2
+- DB Urbanist X Bd.woff2
+- DB Urbanist X Li.woff2
+
+These files are intentionally not bundled in this ZIP.
